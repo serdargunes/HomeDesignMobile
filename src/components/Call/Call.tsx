@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     },
     button: {
         flexDirection: 'row',
-        marginTop: 20,
+        marginTop: 21,
         marginLeft: 30,
         marginBottom: 40,
         justifyContent:'center',
