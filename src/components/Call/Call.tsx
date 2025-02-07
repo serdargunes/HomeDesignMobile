@@ -5,7 +5,7 @@ import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 function Call() {
     const [selectedCategory, setSelectedCategory] = useState(null);
 
-    const handleCategoryPress = (category) => {
+    const handleCategoryPress = (category: any) => {
         setSelectedCategory(category);
     }
 
