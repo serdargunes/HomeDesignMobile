@@ -39,7 +39,7 @@ function BannerDetail({ item }) {
 
 const styles = StyleSheet.create({
     box2: {
-        width: 380,
+        width: 350,
         height: 350,
         marginLeft: 30,
         marginBottom: 3,
