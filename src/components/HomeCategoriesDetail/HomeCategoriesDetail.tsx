@@ -3,6 +3,7 @@ import { TouchableOpacity, View, Text, Image, StyleSheet, Dimensions, ActivityIn
 import CategoriesHome from '../../../assets/CategoriesHome'
 import AntDesign from '@expo/vector-icons/AntDesign';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import { useNavigation} from '@react-navigation/native' 
 interface BannerDetailProps {
     item: {
       id: string;
@@ -13,6 +14,7 @@ interface BannerDetailProps {
   }
   
   function BannerDetail({ item }: BannerDetailProps) {
+    const navigation = useNavigation();
       const currentDate = new Date();
   
       const day = currentDate.getDate();
