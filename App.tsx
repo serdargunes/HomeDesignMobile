@@ -6,6 +6,7 @@ import HomeScreen from './src/screens/HomeScreen/HomeScreen';
 import CategoriesScreen from './src/screens/CategoriesScreen/CategoriesScreen';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import Feather from '@expo/vector-icons/Feather';
+import Design from './src/components/Design/Design';
 
 const Stack = createStackNavigator(); 
 
@@ -76,6 +77,10 @@ export default function App() {
             ),
            
           }}
+        />
+        <Stack.Screen
+          name="Design"
+          component={Design}
         />
       </Stack.Navigator>
     </NavigationContainer>
