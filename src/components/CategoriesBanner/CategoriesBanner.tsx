@@ -25,7 +25,8 @@ function CategoriesBanner({ item }: CategoriesBannerProps) {
     const { width, height } = Dimensions.get('window');
 
     return (
-        <TouchableOpacity style={styles.container}>
+        <TouchableOpacity onPress={() => navigation.navigate('Design')} 
+         style={styles.container}>
             <View style={styles.box2}>
                 <View style={styles.imagebox}>
                     <Image source={{ uri: item.image }} style={styles.image} />
