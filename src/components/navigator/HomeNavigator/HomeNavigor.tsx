@@ -3,6 +3,7 @@ import { Image } from 'react-native'
 import { createStackNavigator } from '@react-navigation/stack'
 import HomeScreen from '../../../screens/HomeScreen/HomeScreen'
 import CategoriesScreen from '../../../screens/CategoriesScreen/CategoriesScreen'
+import Design from '../../Design/Design'
 
 const Stack = createStackNavigator()
 
@@ -27,7 +28,9 @@ function HomeNavigator() {
         component={CategoriesScreen}
         
       />
+      
     </Stack.Navigator>
+    
   );
 }
 
