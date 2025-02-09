@@ -22,7 +22,7 @@ function CategoriesScreen() {
                     </View>
                     <View style={styles.button}>
                         {['SPORT', 'DESIGN', 'TECHNOLOGY', 'TRAVEL'].map((category) => (
-                            <TouchableOpacity
+                            <TouchableOpacity 
                                 key={category}
                                 onPress={() => handleCategoryPress(category)}
                             >
