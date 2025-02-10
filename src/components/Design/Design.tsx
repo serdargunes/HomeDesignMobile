@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, ScrollView,StyleSheet,Image } from 'react-native'
+import { View, Text, ScrollView,StyleSheet,Image, Button } from 'react-native'
 
 function Design() {
   const currentDate = new Date();
@@ -9,7 +9,7 @@ function Design() {
   
       const formattedDate = `${day < 10 ? `0${day}` : day}/${month < 10 ? `0${month}` : month}/${year}`;
   return (
-    <ScrollView>
+    <ScrollView style = {{backgroundColor:'#f7f7f7'}}>  
       <View style = {styles.box1}>
         <Text style = {styles.text1}>{formattedDate}</Text>
         <Text style = {styles.text2} >10 Mins read</Text>
@@ -17,8 +17,15 @@ function Design() {
       <View style = {styles.box2}>
       <Text style = {styles.text3}>Some examples of computer set up that suits to your styles. Minimalist with modern touch.</Text>
       </View>
-      <View style = {styles.image}>
+      <View style = {styles.box3}>
+      <Image style = {styles.image} source={require('../../../assets/Person.jpg')}/>
       <Text style = {styles.text4}>Eren Yaeger</Text>
+      <View style = {styles.textbox}>
+      <Text style={styles.text5}>DESIGN</Text> 
+      </View>    
+      </View>
+      <View>
+        <Text></Text>
       </View>
     </ScrollView>
   )
@@ -34,7 +41,12 @@ const styles = StyleSheet.create({
     marginLeft:30,
     marginRight:30,
   },
-  image:{
+  box3:{
+    flexDirection:'row',
+    padding:10,
+    marginTop:20,
+    justifyContent:'space-between',
+
 
   },
   text1:{
@@ -53,11 +65,31 @@ const styles = StyleSheet.create({
     lineHeight:27,
   },
   text4:{
-    fontSize:15,
-    fontWeight:'500',
-    marginLeft:20,
+    fontSize:17,
+    fontWeight:'600',
+    marginRight:120,
+    opacity:0.4,
+    marginTop:15,
+  },
+  text5:{
+    fontSize:13,
+    fontWeight:'bold',
     opacity:0.5,
   },
+  image :{
+    width:50,
+    height:50,
+  },
+    textbox: {
+        width: 80,
+        height: 40,
+        backgroundColor: 'rgba(227,228,231, 0.7)',
+        top: 10,
+        marginRight:0,
+        justifyContent:'center',
+        alignItems:'center',  
+  },
+  
 
 
 })
