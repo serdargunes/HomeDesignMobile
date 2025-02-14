@@ -20,6 +20,13 @@
 - **React Native:** Uygulamanın ana yapısı ve kullanıcı arayüzü.  
 - **Expo:** React Native geliştirme sürecini hızlandırmak için kullanıldı.
 
+
+
+![ApplicationImage](https://github.com/serdargunes/HomeDesignMobile/blob/master/ApplicationImage/merged_image_horizontal.png)
+
+
+
+
 ## **Kurulum**  
 
 Bu projeyi klonlayın:  
@@ -27,11 +34,12 @@ Bu projeyi klonlayın:
 git clone https://github.com/serdargunes/HomeDesignMobile.git
 cd HomeDesignMobile
 
-## **Gerekli paketleri yükleyin:**
-- **npm install
+Gerekli Paketler İçin:
+npm install
 
-## **Expo ile uygulamayı başlatın:**
-- **npx expo start
+Expo İle Uygulamayı Başlatın:
+npx expo start
 
 
-![ApplicationImage](https://github.com/serdargunes/HomeDesignMobile/blob/master/ApplicationImage/merged_image_horizontal.png)
+
+
