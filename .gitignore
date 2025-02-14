@@ -3,6 +3,13 @@
 # dependencies
 node_modules/
 
+# ApplicationImage klasörünü gizle
+ApplicationImage/
+
+# .gitignore dosyasını gizle
+.gitignore
+
+
 # Expo
 .expo/
 dist/
